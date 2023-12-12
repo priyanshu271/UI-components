@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pop-up.css">
+    <title>Pop-up</title>
+</head>
+<body>
+    <div class="main">
+        <input type="text" id="openDialog" onclick="openPopUp()" placeholder="Click here to choose a color">
+        <div class="modal" id="colorModal">
+            <div class="modal-content">
+                <span class="close" onclick="closePopUp()">&times;</span>
+                <div class="colors">
+                    <input type="radio" name="color" id="red">
+                    <label for='red'>Red</label>
+                    <input type="radio" name="color" id="blue">
+                    <label for='blue'>Blue</label>
+                    <input type="radio" name="color" id="yellow">
+                    <label for='yellow'>Yellow</label>
+                    <input type="radio" name="color" id="orange">
+                    <label for='orange'>Orange</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="pop-up.js"></script>
+</body>
+</html>
