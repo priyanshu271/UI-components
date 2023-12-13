@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.menu-items {
+    display: flex;
+}
+
+.menu-items a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-header {
+    width: 100%;
+    background-color: green;
+}
+
+.menu-items-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .hamburger span {
+        border: 5px solid green;
+        display: flex;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .nav-header {
+        height: 100%;
+        width: 50px;
+    }
+
+    .hamburger {
+        margin-left: 0;
+    }
+
+    .menu-items-mobile {
+        display: block;
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: green;
+        transition: width 0.3s ease;
+        overflow-x: hidden;
+    }
+
+    .menu-items-mobile a {
+        display: block;
+        padding: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-items-mobile.active {
+        width: 200px; 
+    }
+}
